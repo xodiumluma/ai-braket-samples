@@ -27,4 +27,4 @@ Build a simple circuit and run it on a local simulator.
 
   You will prepare a maximally-entangled Bell state between two qubits, for both classical simulators and QPUs.
   On classical environments, the circuit can be run on a local simulator/cloud-based on-demand simulator.
-  On quantum environments, 
+  On quantum environments, we can run the circuit on Rigetti's superconducting machine, and the ion-trap machine from IonQ. Devices can be swapped seamlessly without circuit definition changes - just redefine the device object. You can also learn to recover results using unique ARN associated with each quantum task. This is helpful in the case of potential delays which can happen if your quantum task is in queue waiting to be executed. 
