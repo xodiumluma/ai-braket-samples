@@ -32,3 +32,7 @@ Build a simple circuit and run it on a local simulator.
 * [**Get right into Quantum circuits anatomy**](examples/getting_started?3_Deep_dive_into_the_anatomy_of_quantum_circuits/3_Deep_dive_into_the_anatomy_of_quantum_circuits.ipynb)
 
   You'll learn the anatomy of quantum circuits in the Braket SDK. You'll also learn how to build (parameterized) circuits and visually display them, and how to add circuits to each other. Associated circuit depth and size are discussed. We also learn how to execute the circuit on a device of our choice (defining a quantum task), as well as how to track/log/recover/cancel a quantum task efficiently.
+
+8 [**Superdense coding**](examples/getting_started/4_Superdense_coding/4_Superdense_coding.ipynb)
+
+  We learn how to implement the _superdense coding_ protocol via the Braket SDK. This is a way to transmit a couple of classical bits via the transmission of just one qubit. Beginning with a pair of entangled qubits, the sender (Alice) applies a certain quantum gate to their qubit and transmits the result to Bob, the receiver, who can then decode the full two-bit payload.
