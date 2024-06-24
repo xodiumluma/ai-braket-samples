@@ -28,3 +28,7 @@ Build a simple circuit and run it on a local simulator.
   You will prepare a maximally-entangled Bell state between two qubits, for both classical simulators and QPUs.
   On classical environments, the circuit can be run on a local simulator/cloud-based on-demand simulator.
   On quantum environments, we can run the circuit on Rigetti's superconducting machine, and the ion-trap machine from IonQ. Devices can be swapped seamlessly without circuit definition changes - just redefine the device object. You can also learn to recover results using unique ARN associated with each quantum task. This is helpful in the case of potential delays which can happen if your quantum task is in queue waiting to be executed. 
+
+* [**Get right into Quantum circuits anatomy**](examples/getting_started?3_Deep_dive_into_the_anatomy_of_quantum_circuits/3_Deep_dive_into_the_anatomy_of_quantum_circuits.ipynb)
+
+  You'll learn the anatomy of quantum circuits in the Braket SDK. You'll also learn how to build (parameterized) circuits and visually display them, and how to add circuits to each other. Associated circuit depth and size are discussed. We also learn how to execute the circuit on a device of our choice (defining a quantum task), as well as how to track/log/recover/cancel a quantum task efficiently.
