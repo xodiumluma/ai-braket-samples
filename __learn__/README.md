@@ -43,5 +43,10 @@ We learn how to implement the _superdense coding_ protocol via the Braket SDK. T
 
 ## <a name="advanced">Advanced circuits and algorithms</a>
 
-- [**Grover**](examples/advanced_circuits_algorithms/Grover/Grover.ipynb)
+* [**Grover**](examples/advanced_circuits_algorithms/Grover/Grover.ipynb)
   This tutorial explains Grover's quantum algorithm. Build the corresponding quantum circuit with simple building blocks via the Braket SDK. Learn to build custom gates that are not part of the basic gate set that comes with teh SDK. This custom gate can be used as a core quantum gate - just register it as a subroutine
+
+* [**Quantum Amplitude Amplification**](examples/advanced_circuits_algorithms/Quantum_Amplitude_Amplification/Quantum_Amplitude_Amplification.ipynb)
+  Discuss in detail and implement the QAA (Quantum Amplitude Amplification) algorithm via Braket SDK. QAA is a quantum computing routine that generalises the idea behind Grover's search algorithm, with applications across many quantum algorithms. QAA employs an iterative approach to systematically increase probability of finding 1/multiple target states in a given search space. QAA can also be used to achieve a quadratic speedup over classical algorithms in a quantum computer.
+
+  
