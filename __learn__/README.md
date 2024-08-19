@@ -43,17 +43,20 @@ We learn how to implement the _superdense coding_ protocol via the Braket SDK. T
 
 ## <a name="advanced">Advanced circuits and algorithms</a>
 
-* [**Grover**](examples/advanced_circuits_algorithms/Grover/Grover.ipynb)
+- [**Grover**](examples/advanced_circuits_algorithms/Grover/Grover.ipynb)
   This tutorial explains Grover's quantum algorithm. Build the corresponding quantum circuit with simple building blocks via the Braket SDK. Learn to build custom gates that are not part of the basic gate set that comes with teh SDK. This custom gate can be used as a core quantum gate - just register it as a subroutine
 
-* [**Quantum Amplitude Amplification**](examples/advanced_circuits_algorithms/Quantum_Amplitude_Amplification/Quantum_Amplitude_Amplification.ipynb)
+- [**Quantum Amplitude Amplification**](examples/advanced_circuits_algorithms/Quantum_Amplitude_Amplification/Quantum_Amplitude_Amplification.ipynb)
   Discuss in detail and implement the QAA (Quantum Amplitude Amplification) algorithm via Braket SDK. QAA is a quantum computing routine that generalises the idea behind Grover's search algorithm, with applications across many quantum algorithms. QAA employs an iterative approach to systematically increase probability of finding 1/multiple target states in a given search space. QAA can also be used to achieve a quadratic speedup over classical algorithms in a quantum computer.
 
- * [**Quantum Fourier Transform**](examples/advanced_circuits_algorithms/Quantum_Fourier_Transform/Quantum_Fourier_Transform.ipynb)
+- [**Quantum Fourier Transform**](examples/advanced_circuits_algorithms/Quantum_Fourier_Transform/Quantum_Fourier_Transform.ipynb)
   We see here a detailed implementation of Quantum Fourier Transform (QFT) and inverse QFT. There are two versions - with and without recursion. This is an important subroutine used in many quantum algorithms, such as Shor's algorithm for factoring, and the QPE (quantum phase estimation) algorithm for predicting eigenvalues of a unitary operator. QPEs run efficiently on quantum machines, using O(n<sup>2</sup>) single-qubit Hadamard gates along with two-qubit controlled phase shift gates (where 𝑛 is the number of qubits). Let's check out the basics of quantum Fourier transform and how it relates with classical/discrete Fourier transform. This notebook also displays the `circuit.subroutine` functionality, that allows one to define custom methods and tack them onto the Circuit class.
 
-* [**Quantum Phase Estimation**](examples/advanced_circuits_algorithms/Quantum_Phase_Estimation/Quantum_Phase_Estimation.ipynb)
+- [**Quantum Phase Estimation**](examples/advanced_circuits_algorithms/Quantum_Phase_Estimation/Quantum_Phase_Estimation.ipynb)
   View a detailed implementation of the QPE (Quantum Phase Estimation) algorithm via the SDK. This is designed to estimate the eigenvalues of unitary operator 𝑈, and is an important quantum algorithm subroutines, such as Shor's algorithm for factoring, plus the HHL algorithm (named after physicists Harrow, Hassidim and Lloyd) for solving linear systems of equations on quantum machines. Also, eigenvalue problems are evident across multiple application areas and disciplines, including, for example, PCA (principal component analysis) which is used in machine learning, or in solving differential equations in fields such as maths, physics, chemistry and engineering. Here we will checkout the QPE algorithm's basics, then implement QPE via the SDK, followed by illustration with simple examples. We also see the SDK `circuit.subroutine` functionality - we can use custom-built gates as if they were a generic built-in gate. We can run the tutorial on the local or the on-demand simulator. To toggle between both, we need to only tweak one line of code - see cell below.
 
-* [**Randomness Generation**](examples/advanced_circuits_algorithms/Randomness/Randomness_Generation.ipynb)
+- [**Randomness Generation**](examples/advanced_circuits_algorithms/Randomness/Randomness_Generation.ipynb)
   Here we implement a Quantum Random Number Generator - QRNG - we learn how to use 2 discrete quantum QPUs from different suppliers in Braket to supply two streams of weakly random bits. We then learn how to come up with physically secure randomness from the two weak sources via classical post-processing via randomness extractors.
+
+- [**Simon's Algorithm**](examples/advanced_circuits_algorithms/Simons_Algorithm/Simons_Algorithm.ipynb)
+  Here we implement in detail Simon's algorithm, that illustrates the first example of an exponential speedup compared to the best known classical algorithm via solving a specific problem using a quantum computing device. Simon's algorithm existed prior to Shor's factoring algorithm and it inspired many quantum computation works after it.
